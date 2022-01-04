@@ -19,13 +19,13 @@ def is_multiple_of(number, d):
     return False
 
 
-divider_3 = 3
-divider_5 = 5
+value1 = 3
+value2 = 5
 
 
 def FizzBuzz(number):
-    cond1 = is_multiple_of(number, divider_3)
-    cond2 = is_multiple_of(number, divider_5)
+    cond1 = is_multiple_of(number, value1)
+    cond2 = is_multiple_of(number, value2)
 
     if cond1 and cond2:
         print("FizzBuzz")
