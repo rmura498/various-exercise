@@ -13,30 +13,25 @@ Test the function with all the numbers between 1 and N.
 """
 
 
-def is_multiple_of_3(number):
-    if (number % 3) == 0:
+def is_multiple_of(number, d):
+    if (number % d) == 0:
         return True
     return False
 
 
-def is_multiple_of_5(number):
-    if (number % 5) == 0:
-        return True
-    return False
-
-
-def is_multiple_of_3_5(number):
-    if ((number % 3) == 0) and ((number % 5) == 0):
-        return True
-    return False
+divider_3 = 3
+divider_5 = 5
 
 
 def FizzBuzz(number):
-    if is_multiple_of_3_5(number):
+    cond1 = is_multiple_of(number, divider_3)
+    cond2 = is_multiple_of(number, divider_5)
+
+    if cond1 and cond2:
         print("FizzBuzz")
-    elif is_multiple_of_3(number):
+    elif cond1:
         print("Fizz")
-    elif is_multiple_of_5(number):
+    elif cond2:
         print("Buzz")
 
     else:
