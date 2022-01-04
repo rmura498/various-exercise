@@ -1,0 +1,14 @@
+We considered the following software design principles:
+
+1- avoid magi numbers: use identifiers with meaningful names
+2- Dry: don't repeat yourself
+3- Anticipation of change
+4- Single responsibility principle
+
+in the example of fizzbuzz, is_multiple_of() and is_greater_than() are responsible for computing the conditions.
+fb() is responsible for using the conditions.
+
+In OPEN-CLOSED principle (part of SOLID principles): software entities should be open for extension, but closed for modification.
+We want to extend our software's functionality by adding 'parts' without changing the existing code.
+
+in this example we can add new functions to manage new conditions without changing the old ones.
