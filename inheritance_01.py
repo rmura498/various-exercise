@@ -9,7 +9,6 @@ and the email address's formal correctness is checked
 Instances have a methods who_i_am() that returns a string
 composed by name and email 
 
-
 """
 
 
@@ -35,7 +34,8 @@ class Contact(object):
 
     @staticmethod
     def is_valid(email):
-
+        """@staticmethod is a decorator for standalone functions. In this type of function there isn't the instance
+        like self. ...."""
         if re.fullmatch(regex, email):
             return True
         else:
@@ -74,5 +74,5 @@ print(s.who_i_am())
 s.order('a_thing')
 print(f1.who_i_am(), ' ', f1.phone)
 print(f2.who_i_am(), ' ', f2.phone)
-f2.email = 'correct.email@abc.de'
+f2.email = 'correct.email@abc.com'
 print(f2.who_i_am(), ' ', f2.phone)
