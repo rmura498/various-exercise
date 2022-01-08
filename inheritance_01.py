@@ -59,7 +59,19 @@ class Supplier(Contact):
 
 class Friend(Contact):
 
-    def __init__(self, name, email, phone):
+    def __init__(self, name, email, phone=None):
+        """Phone attribute has 'none' as default value.
+        This is because we need that the interfaces of our parent and child class are
+         merely the same. In this way we can, for example, link the name of the class
+         and use the interface of these in the same way
+          without considering different interfaces"""
+
+        """The liskov substitution principle says that object of a 
+        subclass can replace object of the superclass without breaking the application
+        Function or methods that use object of a base classes must be able to use objects of
+        derived classes without knowing it"""
+
+
         super().__init__(name, email)
         self.phone = phone
 
