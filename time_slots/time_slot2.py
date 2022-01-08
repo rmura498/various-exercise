@@ -10,8 +10,8 @@ class TimeSlot:
     minutes_in_hour = 60
 
     def __init__(self, name='name'):  # initialize an empty slot
-        self._h = 0
-        self._m = 0
+        self.h = 0
+        self.m = 0
         self.name = name
         # timeslot is an instance attribute
         # (attribute of the object)
@@ -29,17 +29,18 @@ class TimeSlot:
         self._h = int(m / self.minutes_in_hour)
         self._m = m % self.minutes_in_hour
 
+
     def set_h_m(self, h, m):
         # set_h_m() is an instance method #(method of the object)
-        self._h = h
-        self._m = m
+        self.h = h
+        self.m = m
 
     def get_h_m(self):
-        return self._h, self._m
+        return self.h, self.m
 
     def __add__(self, ts):
         new_ts = TimeSlot()
-        new_ts.m = (self._h + ts._h) * self.minutes_in_hour + self._m + ts._m
+        new_ts.m = (self.h + ts.h) * self.minutes_in_hour + self.m + ts.m
         return new_ts
 
 
