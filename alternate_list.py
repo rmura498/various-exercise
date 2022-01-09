@@ -8,7 +8,7 @@ The object must respond only to methods add_item() and ad_collection()
 """
 
 
-class AlternateList(list):
+class AlternateListComp():
     def __init__(self):
         self.list = []
         self._last_index = 0
@@ -34,7 +34,7 @@ class AlternateList(list):
             return False
 
 
-obj = AlternateList()
+obj = AlternateListComp()
 obj.add_item(24)
 obj.add_collection([1, 2, 3, 4, 5, 6])
 
