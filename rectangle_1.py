@@ -1,3 +1,8 @@
+"""
+Code that works with Rectangle must work also with the Square class
+"""
+
+
 class Rectangle(object):
     def __init__(self, a, b):
         self.a = a
@@ -29,18 +34,17 @@ class Rectangle(object):
 class Square(Rectangle):
 
     def __init__(self, a, b=0):
-        super().__init__(a,a)
-
+        super().__init__(a, a)
 
 
 print("Rectangle")
-r1=Rectangle(1,2)
+r1 = Rectangle(1, 2)
 print(r1.a, r1.b)
-r1.a=10
+r1.a = 10
 print(r1.a, r1.b)
 
 print("Square")
-s1=Square(2)
+s1 = Square(2)
 print(s1.a, s1.b)
-s1.b=10
+s1.b = 10
 print(s1.a, s1.b)
