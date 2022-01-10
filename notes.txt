@@ -12,3 +12,9 @@ In OPEN-CLOSED principle (part of SOLID principles): software entities should be
 We want to extend our software's functionality by adding 'parts' without changing the existing code.
 
 in this example we can add new functions to manage new conditions without changing the old ones.
+
+DESIGN PATTERNS
+
+The pattern is a proposal of solution from recurrent problem.
+Instead of reinvent a new solution every time we can use the knowledge developed by other programmers.
+A solution pattern has 4 essential element: name, problem, solutions, consequences
