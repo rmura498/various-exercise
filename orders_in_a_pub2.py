@@ -32,11 +32,13 @@ class CustomerNormalHour(Customer):
 class CustomerHappyHour(Customer):
 
     def add_drink(self, drink, cost):
-        self.bill += drink * cost * 0.5
+        discount = 0.5
+        self.bill += drink * cost * discount
 
     @staticmethod
     def get_actual_dress():
         return "Happy Hour dress"
+
 
 # NORMAL BILLING
 customer1 = CustomerNormalHour()
