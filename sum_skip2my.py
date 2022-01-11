@@ -6,7 +6,6 @@ You can implement this solution using a function (#1) or a class (#2).
 """
 
 
-
 # 1
 
 def sum_skip_el1(nums, el_to_skip):
@@ -43,7 +42,7 @@ class SumSkip:
                 self.state = 1
             else:
                 self.sum_val += el
-        if self.state == 1:
+        elif self.state == 1:
             if el == self.el_to_skip:
                 pass
             else:
