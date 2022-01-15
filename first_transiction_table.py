@@ -122,7 +122,7 @@ list_of_nums = [nums1, nums2, nums3]
 list_of_results = [3, 3, 2]
 
 for nums, r in zip(list_of_nums, list_of_results):
-    obj = SkipWithState_a(13)
+    obj = SkipWithState_b(13)
 
     for el in nums:
         obj.process_input(el)
