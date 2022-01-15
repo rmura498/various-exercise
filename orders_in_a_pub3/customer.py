@@ -9,7 +9,7 @@ class Customer:
 
     @strategy.setter
     def strategy(self, strategy):
-       self._strateßgy = strategy
+       self._strategy = strategy
 
     def print_bill(self):
         print(self.cost)
