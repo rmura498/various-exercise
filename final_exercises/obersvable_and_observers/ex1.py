@@ -49,6 +49,10 @@ class Segment:
 
 
 class Observer:
+
+    def __str__(self):
+        return self.__class__.__name__
+
     def __init__(self, name):
         self.name = name
 
@@ -62,9 +66,13 @@ oss1 = Observer('oss1')
 oss2 = Observer('oss2')
 oss3 = Observer('oss3')
 
+print(segment.subscribers)
+
 segment.register('too_small', oss1)
 segment.register('too_big', oss2)
 segment.register('too_small', oss3)
 
-segment.x = [0, 0]
-segment.y = [5, 5]
+print(segment.subscribers)
+
+# segment.x = [0, 0]
+# segment.y = [5, 5]
