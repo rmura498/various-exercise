@@ -18,6 +18,7 @@ class Character:
 
     def fight(self, another):
         self.strategy.fight(self, another)
+
     def get_actual_energy(self):
         print("Energy:", self.energy)
 
@@ -27,13 +28,13 @@ class Character:
 day_strategy = DayStrategy()
 night_strategy = NightStrategy()
 
-ch1=Character(day_strategy)
-ch2=Character(day_strategy)
+ch1 = Character(day_strategy)
+ch2 = Character(day_strategy)
 
 ch1.fight(ch2)
 ch1.get_actual_energy()
 
-ch1.strategy=night_strategy
+ch1.strategy = night_strategy
 
 ch1.fight(ch2)
 ch1.get_actual_energy()
