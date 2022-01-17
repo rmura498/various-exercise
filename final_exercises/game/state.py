@@ -55,6 +55,7 @@ class StateTwo(State):
     def _change_state(self, ch1):
         if ch1.energy > 10:
             ch1.set_state(StateThree())
+            #ch1.publisher.dispatch
 
 
 class StateThree(State):

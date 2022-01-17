@@ -7,6 +7,7 @@ class Character:
         self.state = StateZero()
         self.energy = 0
         self.n_fights = 0
+        #self.publisher= Publisher()
 
     def fight(self, another):
         increment_n_fights = 1
@@ -29,16 +30,12 @@ class Character:
 ch1 = Character()
 ch2 = Character()
 
-for i in range(4):
+for i in range(10):
     ch1.fight(ch2)
     print("FIGHT \n")
     print('Character 1: \n '
           'energy ->', ch1.energy,
           "\nNumber of fights", ch1.n_fights,
           "\nState - >", ch1.state)
-    print('Character 2: \n '
-          'energy ->', ch2.energy,
-          "\nNumber of fights", ch2.n_fights,
-          "\nState - >", ch2.state)
 
 
