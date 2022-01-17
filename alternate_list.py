@@ -10,15 +10,18 @@ The object must respond only to methods add_item() and ad_collection()
 """
 If i have an object that contains behavior that i wish to reuse i can extend 
 the class using inheritance, but sometimes is better to keep the object and 
-design a class that contain this object or server and from this inner object uses only the behavior that i need
+design a class that contain this object or server and from this inner object 
+uses only the behavior that i need
 
 """
 
 """
 Another situation in which composition could be better:
 if you have two classes, for example a list and a class that performs mathematical operations.
-You can inherit from both of them, but this make the design more complex, so the idea is to implement a new class 
-with two attributes, one from the math class and the other from the list class, and you can design your interface that 
+You can inherit from both of them, but this make the design more complex, 
+so the idea is to implement a new class 
+with two attributes, one from the math class and the other from the list class, 
+and you can design your interface that 
 uses exactly and only the behavior that you want to use    
 """
 

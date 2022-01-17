@@ -10,7 +10,7 @@ class TimeSlot:
     minutes_in_hour = 60
 
     def __init__(self, name='name'):  # initialize an empty slot
-        self.h = 0
+        self._h = 0
         self.m = 0
         self.name = name
         # timeslot is an instance attribute
@@ -30,7 +30,8 @@ class TimeSlot:
         self._m = m % self.minutes_in_hour
 
 
-    def set_h_m(self, h, m):
+
+    def set_h_m(self, h=0, m=0):
         # set_h_m() is an instance method #(method of the object)
         self.h = h
         self.m = m
@@ -49,6 +50,7 @@ t1.m = 20
 
 t2 = TimeSlot('Tiramisu')
 t2.m = 30
+
 
 t_menu = t1 + t2
 

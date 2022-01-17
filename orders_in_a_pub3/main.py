@@ -6,8 +6,6 @@ import strategy
 normal_strategy = strategy.NormalStrategy()
 happy_hour_strategy = strategy.HappyHourStrategy()
 
-# NORMAL BILLING
-
 customer1 = Customer(normal_strategy)
 customer1.add_drink(1, 7)
 
